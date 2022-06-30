@@ -1,3 +1,9 @@
+:root{
+  --bs-oscuro:#282c34;
+  --bs-white:#fff
+}
+
+
 body {
   margin: 0;
   font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
@@ -40,6 +46,7 @@ body {
 
 .characters {
   padding: 50px;
+  margin-top: 1rem;
 }
 
 .characters h1 {
@@ -121,9 +128,22 @@ body {
 }
 
 .back-home {
-  text-decoration: underline;
+  background-color: #1ba94c;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgb(27 169 76 / 50%);
+  padding-left: 1.528em;
+  padding-right: 1.528em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: none;
   cursor: pointer;
   font-size: 15px;
+}
+
+.back-home:hover {
+  background-color: #ffffff;
+  border: 1px solid #1ba94c;
+  color: #1ba94c;
 }
 
 @media (max-width: 768px) {
@@ -146,4 +166,21 @@ body {
   .character-container img {
     width: 150px;
   }
+}
+
+
+::-webkit-scrollbar{
+  width:10px
+}
+::-webkit-scrollbar-track{
+  background:var(--bs-oscuro);
+  border-radius:0
+}
+::-webkit-scrollbar-thumb{
+  background:var(--bs-white);
+  border-radius:50px
+}
+.form-control:focus{
+  border-color:var(--bs-oscuro);
+  box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 0 rgba(255,0,0,.6)
 }
